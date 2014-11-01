@@ -6,7 +6,7 @@ own works.
 
   * /vox -- the original models in .vox format
   * /collada -- optimized polys for use in game frameworks like Unity
-  * /previews -- screenshots
+  * /screenshots -- screenshots
 
 
 Instructions for loading in Unity
