@@ -1,7 +1,8 @@
 Mini Mike's Metro Minis
+=======================
 
-This is a collection of city-themed voxel models that you can remix or use 
-outright in your own works.
+A city-themed collection of voxel models you can remix or use outright in your 
+own works.
 
   /vox -- the original models in .vox format
   /collada -- optimized polys for use in game frameworks like Unity
