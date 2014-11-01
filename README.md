@@ -4,19 +4,21 @@ Mini Mike's Metro Minis
 A city-themed collection of voxel models you can remix or use outright in your 
 own works.
 
-  /vox -- the original models in .vox format
-  /collada -- optimized polys for use in game frameworks like Unity
-  /previews -- screenshots
+  * /vox -- the original models in .vox format
+  * /collada -- optimized polys for use in game frameworks like Unity
+  * /previews -- screenshots
+
 
 Instructions for loading in Unity
 ---------------------------------
 When loading the collada models into Unity, the textures will look blurry and 
 stretched until you adjust the .png import settings:
 
-  TextureType: advanced
-  Non Power of 2: None
-  Generate Mip Maps: unchecked
-  Filter mode: point
+  * TextureType: advanced
+  * Non Power of 2: None
+  * Generate Mip Maps: unchecked
+  * Filter mode: point
+
 
 Preferred Attribution
 ---------------------
@@ -32,4 +34,5 @@ being in it!
 Enjoy!
 
 - Mike Judge
+
 Twitter: @mikelovesrobots
