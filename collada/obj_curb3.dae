@@ -4,27 +4,27 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.21</authoring_tool>
 </contributor>
-<created>2014-11-07T22:51:29</created>
-<modified>2014-11-07T22:51:29</modified>
+<created>2014-11-07T22:48:58</created>
+<modified>2014-11-07T22:48:58</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-<image id="obj_sign1_texture0-image" name="obj_sign1_texture0-image">
-<init_from>obj_sign1_texture0.png</init_from>
+<image id="obj_curb3_texture0-image" name="obj_curb3_texture0-image">
+<init_from>obj_curb3_texture0.png</init_from>
 </image>
 </library_images>
 <library_effects>
 <effect id="lambert0-fx">
 <profile_COMMON>
-<newparam sid="obj_sign1_texture0-surface">
+<newparam sid="obj_curb3_texture0-surface">
 <surface type="2D">
-<init_from>obj_sign1_texture0-image</init_from>
+<init_from>obj_curb3_texture0-image</init_from>
 </surface>
 </newparam>
-<newparam sid="obj_sign1_texture0-sampler">
+<newparam sid="obj_curb3_texture0-sampler">
 <sampler2D>
-<source>obj_sign1_texture0-surface</source>
+<source>obj_curb3_texture0-surface</source>
 </sampler2D>
 </newparam>
 <technique sid="common">
@@ -36,7 +36,7 @@
 <color>0 0 0 1</color>
 </ambient>
 <diffuse>
-<texture texcoord="TEX0" texture="obj_sign1_texture0-sampler"/>
+<texture texcoord="TEX0" texture="obj_curb3_texture0-sampler"/>
 </diffuse>
 </lambert>
 </technique>
@@ -52,9 +52,9 @@
 <geometry id="Plane-tex-mesh" name="Plane-tex">
 <mesh>
 <source id="Plane-tex-mesh-positions">
-<float_array count="48" id="Plane-tex-mesh-positions-array">-1 -1 37 -1 1 -1 -1 -1 -1 -1 1 37 1 -1 37 1 1 35 1 -1 35 1 1 37 1 -1 25 1 1 -1 1 -1 -1 1 1 25 7 -1 35 7 1 25 7 -1 25 7 1 35</float_array>
+<float_array count="24" id="Plane-tex-mesh-positions-array">-15 -13 1 -15 11 -1 -15 -13 -1 -15 11 1 15 -13 1 15 11 -1 15 -13 -1 15 11 1</float_array>
 <technique_common>
-<accessor count="16" source="#Plane-tex-mesh-positions-array" stride="3">
+<accessor count="8" source="#Plane-tex-mesh-positions-array" stride="3">
 <param name="X" type="float"/>
 <param name="Y" type="float"/>
 <param name="Z" type="float"/>
@@ -62,9 +62,9 @@
 </technique_common>
 </source>
 <source id="Plane-tex-mesh-uvs">
-<float_array count="66" id="Plane-tex-mesh-uvs-array">0.8183104 0.33356905 0.9090266 0.6661953 0.9090266 0.33356905 0.8182461 0.33380473 0.8182461 0.66643095 0.90896237 0.66643095 0.18198295 0.3334743 0.63628125 0.66638476 0.63628125 0.3334743 0.18190056 0.33361524 0.18190056 0.6665257 0.6361989 0.6665257 0.454674 0.33356905 0.54539025 0.6661953 0.54539025 0.33356905 0.45460975 0.33380473 0.45460975 0.66643095 0.545326 0.66643095 0.09103765 0.33356905 0.1817539 0.6661953 0.1817539 0.33356905 0.09097337 0.33380473 0.09097337 0.66643095 0.18168962 0.66643095 0.81825745 0.3338418 0.81825745 0.6109262 0.9089396 0.6663431 0.9090359 0.33367303 0.81829184 0.5613292 0.9090359 0.66640127 0.90896237 0.33356905 0.8182461 0.33356905 0.8182461 0.6661953</float_array>
+<float_array count="60" id="Plane-tex-mesh-uvs-array">0.31811145 0.16663149 0.27276245 0.106130965 0.27276245 0.16663149 0.31814665 0.16659631 0.31814665 0.10609578 0.27279764 0.10609578 0.09085866 0.26384267 0.04547976 0.09731467 0.04547976 0.26384267 0.09088388 0.26379645 0.09088388 0.09726845 0.045504972 0.09726845 0.2727925 0.16670537 0.95451283 0.8332559 0.95451283 0.16670537 0.04548715 0.22229964 0.04548715 0.88885015 0.72720754 0.88885015 0.09084481 0.27773848 0.045486685 0.22230078 0.045486685 0.27773848 0.09087695 0.2776992 0.09087695 0.2222615 0.045518827 0.2222615 0.2108088 0.88892776 0.27269477 0.94436675 0.27269477 0.88892776 0.2107763 0.88896656 0.2107763 0.9444056 0.27266228 0.9444056</float_array>
 <technique_common>
-<accessor count="33" source="#Plane-tex-mesh-uvs-array" stride="2">
+<accessor count="30" source="#Plane-tex-mesh-uvs-array" stride="2">
 <param name="S" type="float"/>
 <param name="T" type="float"/>
 </accessor>
@@ -73,18 +73,18 @@
 <vertices id="Plane-tex-mesh-vertices">
 <input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
 </vertices>
-<polylist count="28" material="lambert0-material">
+<polylist count="12" material="lambert0-material">
 <input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
 <input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
-<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
-<p>0 0 1 1 2 2 0 3 3 4 1 5 5 1 4 0 6 2 7 4 4 3 5 5 9 1 8 0 10 2 11 4 8 3 9 5 13 7 12 6 14 8 15 10 12 9 13 11 1 1 10 0 2 2 9 4 10 3 1 5 11 13 14 12 8 14 13 16 14 15 11 17 12 18 5 19 6 20 12 21 15 22 5 23 4 0 3 1 0 2 4 3 7 4 3 5 14 7 6 6 8 8 8 24 6 25 0 26 14 11 12 10 6 9 6 3 4 4 0 5 2 27 8 28 0 29 2 30 10 31 8 32 5 6 13 7 11 8 5 25 11 24 3 26 15 10 13 11 5 9 7 4 5 3 3 5 11 28 1 27 3 29 9 31 1 30 11 32</p>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 5 7 4 6 6 8 7 10 4 9 5 11 1 13 6 12 2 14 5 16 6 15 1 17 4 12 3 13 0 14 4 15 7 16 3 17 6 18 0 19 2 20 6 21 4 22 0 23 3 25 5 24 1 26 7 28 5 27 3 29</p>
 </polylist>
 </mesh>
 </geometry>
 </library_geometries>
 <library_visual_scenes>
 <visual_scene id="Scene" name="Scene">
-<node id="obj_sign1" name="obj_sign1" type="NODE">
+<node id="obj_curb3" name="obj_curb3" type="NODE">
 <translate sid="location">0 0 0</translate>
 <rotate sid="rotationZ">0 0 1 0</rotate>
 <rotate sid="rotationY">0 1 0 0</rotate>

@@ -4,27 +4,27 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.21</authoring_tool>
 </contributor>
-<created>2014-11-04T21:22:51</created>
-<modified>2014-11-04T21:22:51</modified>
+<created>2014-11-07T22:58:04</created>
+<modified>2014-11-07T22:58:04</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-<image id="veh_wagon_texture0-image" name="veh_wagon_texture0-image">
-<init_from>veh_wagon_texture0.png</init_from>
+<image id="veh_wagon1_texture0-image" name="veh_wagon1_texture0-image">
+<init_from>veh_wagon1_texture0.png</init_from>
 </image>
 </library_images>
 <library_effects>
 <effect id="lambert0-fx">
 <profile_COMMON>
-<newparam sid="veh_wagon_texture0-surface">
+<newparam sid="veh_wagon1_texture0-surface">
 <surface type="2D">
-<init_from>veh_wagon_texture0-image</init_from>
+<init_from>veh_wagon1_texture0-image</init_from>
 </surface>
 </newparam>
-<newparam sid="veh_wagon_texture0-sampler">
+<newparam sid="veh_wagon1_texture0-sampler">
 <sampler2D>
-<source>veh_wagon_texture0-surface</source>
+<source>veh_wagon1_texture0-surface</source>
 </sampler2D>
 </newparam>
 <technique sid="common">
@@ -36,7 +36,7 @@
 <color>0 0 0 1</color>
 </ambient>
 <diffuse>
-<texture texcoord="TEX0" texture="veh_wagon_texture0-sampler"/>
+<texture texcoord="TEX0" texture="veh_wagon1_texture0-sampler"/>
 </diffuse>
 </lambert>
 </technique>
@@ -84,7 +84,7 @@
 </library_geometries>
 <library_visual_scenes>
 <visual_scene id="Scene" name="Scene">
-<node id="veh_wagon" name="veh_wagon" type="NODE">
+<node id="veh_wagon1" name="veh_wagon1" type="NODE">
 <translate sid="location">0 0 0</translate>
 <rotate sid="rotationZ">0 0 1 0</rotate>
 <rotate sid="rotationY">0 1 0 0</rotate>
