@@ -45,9 +45,11 @@ Frequently Asked Questions
 --------------------------
 
 Q: What software did you use to make these?
+
 A: Magicavoxel and VoxelShop for exporting the collada files
 
 Q: Are these characters rigged?
+
 A: Nope. I recommend making them waddle or sticking a popsicle stick up their butt and dragging them around.  It's cartoony, you'll get away with it.
 
 Licensing
