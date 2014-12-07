@@ -4,8 +4,8 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.21</authoring_tool>
 </contributor>
-<created>2014-12-06T22:40:32</created>
-<modified>2014-12-06T22:40:32</modified>
+<created>2014-12-07T12:47:20</created>
+<modified>2014-12-07T12:47:20</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Z_UP</up_axis>
 </asset>
@@ -62,9 +62,9 @@
 </technique_common>
 </source>
 <source id="Plane-tex-mesh-uvs">
-<float_array count="12" id="Plane-tex-mesh-uvs-array">0.33380473 0.33356905 0.66643095 0.6661953 0.66643095 0.33356905 0.33356905 0.33380473 0.33356905 0.66643095 0.6661953 0.66643095</float_array>
+<float_array count="66" id="Plane-tex-mesh-uvs-array">0.29993355 0.25024915 0.20013288 0.49987543 0.29993355 0.49987543 0.29986712 0.25012457 0.20006643 0.25012457 0.20006643 0.49975085 0.20011094 0.49986133 0.29994452 0.16694401 0.29994452 0.49986133 0.34994 0.5002667 0.34994 0.8332 0.20012 0.8332 0.20012803 0.50012803 0.36660266 0.83307725 0.36660266 0.50012803 0.20006402 0.50025606 0.20006402 0.8332053 0.36653864 0.8332053 0.29992706 0.499772 0.2001459 0.29178065 0.29992706 0.29178065 0.2998541 0.499886 0.20007296 0.499886 0.20007296 0.29189464 0.39987198 0.50012803 0.27506402 0.74974394 0.27506402 0.50012803 0.10015314 0.16677387 0.59992343 0.6664523 0.59992343 0.16677387 0.89982516 0.2778587 0.6000874 0.2778587 0.6000874 0.5553937</float_array>
 <technique_common>
-<accessor count="6" source="#Plane-tex-mesh-uvs-array" stride="2">
+<accessor count="33" source="#Plane-tex-mesh-uvs-array" stride="2">
 <param name="S" type="float"/>
 <param name="T" type="float"/>
 </accessor>
@@ -77,7 +77,7 @@
 <input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
 <input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
 <vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
-<p>0 0 1 1 2 2 0 3 3 4 1 5 5 1 4 0 6 2 7 4 4 3 5 5 1 1 6 0 2 2 5 4 6 3 1 5 4 0 3 1 0 2 4 3 7 4 3 5 6 0 0 1 2 2 6 3 4 4 0 5 3 1 5 0 1 2 7 4 5 3 3 5</p>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 5 7 4 6 6 8 7 10 4 9 5 11 1 13 6 12 2 14 5 16 6 15 1 17 4 18 3 19 0 20 4 21 7 22 3 23 6 24 0 25 2 26 6 21 4 22 0 23 3 28 5 27 1 29 7 31 5 30 3 32</p>
 </polylist>
 </mesh>
 </geometry>
