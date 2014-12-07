@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+<contributor>
+<author>VoxelShop User</author>
+<authoring_tool>VoxelShop V1.4.21</authoring_tool>
+</contributor>
+<created>2014-12-06T22:38:55</created>
+<modified>2014-12-06T22:38:55</modified>
+<unit meter="1" name="meter"/>
+<up_axis>Z_UP</up_axis>
+</asset>
+<library_images>
+<image id="obj_fire2_texture0-image" name="obj_fire2_texture0-image">
+<init_from>obj_fire2_texture0.png</init_from>
+</image>
+</library_images>
+<library_effects>
+<effect id="lambert0-fx">
+<profile_COMMON>
+<newparam sid="obj_fire2_texture0-surface">
+<surface type="2D">
+<init_from>obj_fire2_texture0-image</init_from>
+</surface>
+</newparam>
+<newparam sid="obj_fire2_texture0-sampler">
+<sampler2D>
+<source>obj_fire2_texture0-surface</source>
+</sampler2D>
+</newparam>
+<technique sid="common">
+<lambert>
+<emission>
+<color>0 0 0 1</color>
+</emission>
+<ambient>
+<color>0 0 0 1</color>
+</ambient>
+<diffuse>
+<texture texcoord="TEX0" texture="obj_fire2_texture0-sampler"/>
+</diffuse>
+</lambert>
+</technique>
+</profile_COMMON>
+</effect>
+</library_effects>
+<library_materials>
+<material id="lambert0-material" name="lambert0">
+<instance_effect url="#lambert0-fx"/>
+</material>
+</library_materials>
+<library_geometries>
+<geometry id="Plane-tex-mesh" name="Plane-tex">
+<mesh>
+<source id="Plane-tex-mesh-positions">
+<float_array count="60" id="Plane-tex-mesh-positions-array">3 -1 1 3 1 -1 3 -1 -1 3 1 1 -3 -1 3 -3 1 -1 -3 -1 -1 -3 1 3 1 -1 1 1 1 -1 1 -1 -1 1 1 1 5 -1 1 5 1 -1 5 -1 -1 5 1 1 -1 -1 3 -1 1 1 -1 -1 1 -1 1 3</float_array>
+<technique_common>
+<accessor count="20" source="#Plane-tex-mesh-positions-array" stride="3">
+<param name="X" type="float"/>
+<param name="Y" type="float"/>
+<param name="Z" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<source id="Plane-tex-mesh-uvs">
+<float_array count="30" id="Plane-tex-mesh-uvs-array">0.20028284 0.33356905 0.39985856 0.6661953 0.39985856 0.33356905 0.20014141 0.33380473 0.20014141 0.66643095 0.39971715 0.66643095 0.4003328 0.33351824 0.7998336 0.66629684 0.7998336 0.33351824 0.40016642 0.33370313 0.40016642 0.6664818 0.7996672 0.6664818 0.400225 0.3335 0.6 0.6663333 0.799775 0.3335</float_array>
+<technique_common>
+<accessor count="15" source="#Plane-tex-mesh-uvs-array" stride="2">
+<param name="S" type="float"/>
+<param name="T" type="float"/>
+</accessor>
+</technique_common>
+</source>
+<vertices id="Plane-tex-mesh-vertices">
+<input semantic="POSITION" source="#Plane-tex-mesh-positions"/>
+</vertices>
+<polylist count="32" material="lambert0-material">
+<input offset="0" semantic="VERTEX" source="#Plane-tex-mesh-vertices"/>
+<input offset="1" semantic="TEXCOORD" set="0" source="#Plane-tex-mesh-uvs"/>
+<vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+<p>0 0 1 1 2 2 0 3 3 4 1 5 4 6 5 7 6 8 4 9 7 10 5 11 9 1 8 0 10 2 11 4 8 3 9 5 13 1 12 0 14 2 15 4 12 3 13 5 17 1 16 0 18 2 19 4 16 3 17 5 1 1 14 0 2 2 13 4 14 3 1 5 5 7 10 6 6 8 9 10 10 9 5 11 12 0 3 1 0 2 12 3 15 4 3 5 8 0 17 1 18 2 8 3 11 4 17 5 16 0 7 1 4 2 16 3 19 4 7 5 14 0 0 1 2 2 14 3 12 4 0 5 10 12 18 13 6 14 18 13 4 12 6 14 10 3 8 4 18 5 18 3 16 4 4 5 3 1 13 0 1 2 15 4 13 3 3 5 17 13 9 12 5 14 7 12 17 13 5 14 11 4 9 3 17 5 19 4 17 3 7 5</p>
+</polylist>
+</mesh>
+</geometry>
+</library_geometries>
+<library_visual_scenes>
+<visual_scene id="Scene" name="Scene">
+<node id="obj_fire2" name="obj_fire2" type="NODE">
+<translate sid="location">0 0 0</translate>
+<rotate sid="rotationZ">0 0 1 0</rotate>
+<rotate sid="rotationY">0 1 0 0</rotate>
+<rotate sid="rotationX">1 0 0 0</rotate>
+<scale sid="scale">0.05 0.05 0.05</scale>
+<instance_geometry url="#Plane-tex-mesh">
+<bind_material>
+<technique_common>
+<instance_material symbol="lambert0-material" target="#lambert0-material">
+<bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="TEX0"/>
+</instance_material>
+</technique_common>
+</bind_material>
+</instance_geometry>
+</node>
+</visual_scene>
+</library_visual_scenes>
+<scene>
+<instance_visual_scene url="#Scene"/>
+</scene>
+</COLLADA>
