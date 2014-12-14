@@ -1,7 +1,7 @@
 Mini Mike's Metro Minis
 =======================
  
-A city-themed collection of over 200 voxel models you can remix or use outright in your 
+A city-themed collection of over 300 blocky models you can remix or use outright in your 
 own works.
 
 Screenshots
@@ -16,12 +16,13 @@ Screenshots
 
 Stuff included
 --------------
-* Characters: Janitor, Mad Scientist, Paramedic, Cops, Hazmat, Riot Cop, Chefs, Mechanics, and lots more people
-* Vehicles: cop car, taxi, ambulance,  car, station wagon, SUV, delivery truck, pickup truck all in multiple colors  
+* Characters: Mayor, Janitor, Mad Scientist, Paramedic, Cops, Hazmat, Riot Cops, Chefs, Mechanics, and 70+ more
+* Vehicles: cop car, taxi, ambulance, town car, station wagon, SUV, delivery, and pickup trucks
 * Buildings: storefronts, coffee shops, apartments, loading docks, and more
+* Suburban homes: craftsman, spanish, modern and manufactured (mobile) homes
 * City stuff: fences, sidewalks, trash cans, newspaper stands, curbs, fountains, bus stops, signs
 * Scenario stuff: aliens, alien spaceships, killbots, zombies, costumed crusaders
-* Environments: grass, concrete
+* Environmental: grass, concrete, trees, bushes
 
 Directory structure
 -------------------
@@ -32,15 +33,15 @@ Directory structure
 
 Instructions for loading in Unity
 ---------------------------------
-When loading the collada models into Unity, the textures will look blurry and 
-stretched until you adjust the .png import settings:
+When loading .collada models into Unity, the textures will look blurry and 
+stretched until you tweak the .png import settings:
 
   * TextureType: advanced
   * Non Power of 2: None
   * Generate Mip Maps: unchecked
   * Filter mode: point
 
-For maximum prettiness, this author recommends turning on ambient occlusion and anti-aliasing.  
+For maximum prettiness, this author recommends turning on ambient occlusion.  If you can afford it, anti-aliasing and depth of field are lovely too.
 
 Frequently Asked Questions
 --------------------------
@@ -49,9 +50,10 @@ Q: What software did you use to make these?
 
 A: Magicavoxel and VoxelShop for exporting the collada files
 
+
 Q: Are these characters rigged?
 
-A: Nope. I recommend making them waddle or sticking a popsicle stick up their butt and dragging them around.  It's cartoony, you'll get away with it.
+A: Nope. I don't really understand how to fit that into my process. I recommend making them waddle or sticking a popsicle stick up their butt and dragging them around.
 
 Licensing
 ---------------------
