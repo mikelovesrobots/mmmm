@@ -1,8 +1,8 @@
 Mini Mike's Metro Minis
 =======================
  
-A city-themed collection of over 300 blocky models you can remix or use outright in your 
-own works.
+A city-themed collection of over 400 blocky models you can remix or use outright in your 
+own works.  Files are provided in .vox, .collada and Unity3D .prefab formats.
 
 Screenshots
 -----------
@@ -17,39 +17,37 @@ Screenshots
 Stuff included
 --------------
 * Characters: Mayor, Janitor, Mad Scientist, Paramedic, Cops, Hazmat, Riot Cops, Chefs, Mechanics, and 70+ more
-* Vehicles: cop car, taxi, ambulance, town car, station wagon, SUV, delivery, and pickup trucks
-* Buildings: storefronts, coffee shops, apartments, loading docks, and more
-* Suburban homes: craftsman, spanish, modern and manufactured (mobile) homes
-* City stuff: fences, sidewalks, trash cans, newspaper stands, curbs, fountains, bus stops, signs
-* Scenario stuff: aliens, alien spaceships, killbots, zombies, costumed crusaders
+* Vehicles: cop car, food truck, taxi, ambulance, town car, station wagon, SUV, fire truck, delivery, and more
+* Buildings: storefronts, churches, coffee shops, apartments, loading docks, and more
+* Suburban homes: craftsman, spanish, modern, manufactured (mobile) homes, tents and more
+* City stuff: fences, sidewalks, trash cans, newspaper stands, curbs, fountains, bus stops, signs and more
+* Scenario stuff: aliens, spaceships, killbots, zombies, creeping tentacles, and costumed crusaders
 * Environmental: grass, concrete, trees, bushes
 
 Directory structure
 -------------------
 
 * /vox -- the original models in .vox format
-* /collada -- optimized polys for use in game frameworks like Unity
+* /collada -- generic optimized poly models for game frameworks
+* /unity -- unity prefabs
 * /screenshots -- screenshots
 
-Instructions for loading in Unity
----------------------------------
-When loading .collada models into Unity, the textures will look blurry and 
-stretched until you tweak the .png import settings:
+Frequently Asked Questions
+--------------------------
+
+Q: What software did you use to make these? How can I tweak them?
+
+A: I use MagicaVoxel for creating the initial files / rendering, and VoxelShop for exporting 
+optimized collada polys.
+
+Q: The .collada models look blurry in Unity?
+
+A: Tweak the .png import settings:
 
   * TextureType: advanced
   * Non Power of 2: None
   * Generate Mip Maps: unchecked
   * Filter mode: point
-
-For maximum prettiness, this author recommends turning on ambient occlusion.  If you can afford it, anti-aliasing and depth of field are lovely too.
-
-Frequently Asked Questions
---------------------------
-
-Q: What software did you use to make these?
-
-A: Magicavoxel and VoxelShop for exporting the collada files
-
 
 Q: Are these characters rigged?
 
