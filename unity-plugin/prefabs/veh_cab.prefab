@@ -32,6 +32,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &169784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 469784}
+  m_Layer: 0
+  m_Name: Offset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &181794
 GameObject:
   m_ObjectHideFlags: 1
@@ -146,7 +161,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &181808
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -177,7 +192,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &181812
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -216,6 +231,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481808}
   m_RootOrder: 5
+--- !u!4 &469784
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169784}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 481812}
+  - {fileID: 481808}
+  m_Father: {fileID: 481810}
+  m_RootOrder: 0
 --- !u!4 &481794
 Transform:
   m_ObjectHideFlags: 1
@@ -319,7 +348,7 @@ Transform:
   - {fileID: 457930}
   - {fileID: 481794}
   - {fileID: 481796}
-  m_Father: {fileID: 481810}
+  m_Father: {fileID: 469784}
   m_RootOrder: 1
 --- !u!4 &481810
 Transform:
@@ -331,8 +360,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 481812}
-  - {fileID: 481808}
+  - {fileID: 469784}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &481812
@@ -341,11 +369,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181812}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: .0500000007, y: .0500000007, z: .0500000007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 481810}
+  m_Father: {fileID: 469784}
   m_RootOrder: 0
 --- !u!23 &2381794
 Renderer:

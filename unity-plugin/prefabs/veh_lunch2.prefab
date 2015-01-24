@@ -18,7 +18,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &149520
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -211,7 +211,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &149544
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -219,6 +219,21 @@ GameObject:
   - 4: {fileID: 449544}
   m_Layer: 0
   m_Name: Colliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &160540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 460540}
+  m_Layer: 0
+  m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,8 +249,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 449520}
-  - {fileID: 449544}
+  - {fileID: 460540}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &449520
@@ -244,11 +258,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149520}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: .0500000007, y: .0500000007, z: .0500000007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 449518}
+  m_Father: {fileID: 460540}
   m_RootOrder: 0
 --- !u!4 &449522
 Transform:
@@ -403,8 +417,22 @@ Transform:
   - {fileID: 449526}
   - {fileID: 449524}
   - {fileID: 449522}
-  m_Father: {fileID: 449518}
+  m_Father: {fileID: 460540}
   m_RootOrder: 1
+--- !u!4 &460540
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160540}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 449520}
+  - {fileID: 449544}
+  m_Father: {fileID: 449518}
+  m_RootOrder: 0
 --- !u!23 &2349518
 Renderer:
   m_ObjectHideFlags: 1
