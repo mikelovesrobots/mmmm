@@ -4,27 +4,27 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.21</authoring_tool>
 </contributor>
-<created>2014-11-01T15:47:10</created>
-<modified>2014-11-01T15:47:10</modified>
+<created>2015-01-29T13:01:58</created>
+<modified>2015-01-29T13:01:58</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-<image id="chef_texture0-image" name="chef_texture0-image">
-<init_from>chef_texture0.png</init_from>
+<image id="chr_chef_texture0-image" name="chr_chef_texture0-image">
+<init_from>chr_chef_texture0.png</init_from>
 </image>
 </library_images>
 <library_effects>
 <effect id="lambert0-fx">
 <profile_COMMON>
-<newparam sid="chef_texture0-surface">
+<newparam sid="chr_chef_texture0-surface">
 <surface type="2D">
-<init_from>chef_texture0-image</init_from>
+<init_from>chr_chef_texture0-image</init_from>
 </surface>
 </newparam>
-<newparam sid="chef_texture0-sampler">
+<newparam sid="chr_chef_texture0-sampler">
 <sampler2D>
-<source>chef_texture0-surface</source>
+<source>chr_chef_texture0-surface</source>
 </sampler2D>
 </newparam>
 <technique sid="common">
@@ -36,7 +36,7 @@
 <color>0 0 0 1</color>
 </ambient>
 <diffuse>
-<texture texcoord="TEX0" texture="chef_texture0-sampler"/>
+<texture texcoord="TEX0" texture="chr_chef_texture0-sampler"/>
 </diffuse>
 </lambert>
 </technique>
@@ -84,7 +84,7 @@
 </library_geometries>
 <library_visual_scenes>
 <visual_scene id="Scene" name="Scene">
-<node id="chef" name="chef" type="NODE">
+<node id="chr_chef" name="chr_chef" type="NODE">
 <translate sid="location">0 0 0</translate>
 <rotate sid="rotationZ">0 0 1 0</rotate>
 <rotate sid="rotationY">0 1 0 0</rotate>

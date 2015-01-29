@@ -4,27 +4,27 @@
 <author>VoxelShop User</author>
 <authoring_tool>VoxelShop V1.4.21</authoring_tool>
 </contributor>
-<created>2014-11-07T22:53:53</created>
-<modified>2014-11-07T22:53:53</modified>
+<created>2015-01-29T13:17:34</created>
+<modified>2015-01-29T13:17:34</modified>
 <unit meter="1" name="meter"/>
 <up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-<image id="obj_streetlight_texture0-image" name="obj_streetlight_texture0-image">
-<init_from>obj_streetlight_texture0.png</init_from>
+<image id="obj_stlight1_texture0-image" name="obj_stlight1_texture0-image">
+<init_from>obj_stlight1_texture0.png</init_from>
 </image>
 </library_images>
 <library_effects>
 <effect id="lambert0-fx">
 <profile_COMMON>
-<newparam sid="obj_streetlight_texture0-surface">
+<newparam sid="obj_stlight1_texture0-surface">
 <surface type="2D">
-<init_from>obj_streetlight_texture0-image</init_from>
+<init_from>obj_stlight1_texture0-image</init_from>
 </surface>
 </newparam>
-<newparam sid="obj_streetlight_texture0-sampler">
+<newparam sid="obj_stlight1_texture0-sampler">
 <sampler2D>
-<source>obj_streetlight_texture0-surface</source>
+<source>obj_stlight1_texture0-surface</source>
 </sampler2D>
 </newparam>
 <technique sid="common">
@@ -36,7 +36,7 @@
 <color>0 0 0 1</color>
 </ambient>
 <diffuse>
-<texture texcoord="TEX0" texture="obj_streetlight_texture0-sampler"/>
+<texture texcoord="TEX0" texture="obj_stlight1_texture0-sampler"/>
 </diffuse>
 </lambert>
 </technique>
@@ -84,7 +84,7 @@
 </library_geometries>
 <library_visual_scenes>
 <visual_scene id="Scene" name="Scene">
-<node id="obj_streetlight" name="obj_streetlight" type="NODE">
+<node id="obj_stlight1" name="obj_stlight1" type="NODE">
 <translate sid="location">0 0 0</translate>
 <rotate sid="rotationZ">0 0 1 0</rotate>
 <rotate sid="rotationY">0 1 0 0</rotate>
