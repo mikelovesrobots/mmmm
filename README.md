@@ -16,7 +16,7 @@ Screenshots
 
 Stuff included
 --------------
-* Characters: Mayor, Janitor, Mad Scientist, Paramedic, Cops, Hazmat, Riot Cops, Chefs, Mechanics, and 70+ more
+* Characters: Mayor, Janitor, Mad Scientist, Paramedic, Cops, Hazmat, Riot Cops, Chefs, Mechanics, almost 100 in all
 * Vehicles: cop car, food truck, taxi, ambulance, town car, station wagon, SUV, fire truck, delivery, and more
 * Buildings: storefronts, churches, coffee shops, apartments, loading docks, and more
 * Suburban homes: craftsman, spanish, modern, manufactured (mobile) homes, tents and more
@@ -28,8 +28,9 @@ Directory structure
 -------------------
 
 * /vox -- the original models in .vox format
+* /fbx -- generic optimized poly models for game frameworks
 * /collada -- generic optimized poly models for game frameworks
-* /unity -- unity prefabs
+* /unity-plugin -- unity prefabs w/colliders
 * /screenshots -- screenshots
 
 Frequently Asked Questions
@@ -39,15 +40,6 @@ Q: What software did you use to make these? How can I tweak them?
 
 A: I use MagicaVoxel for creating the initial files / rendering, and VoxelShop for exporting 
 optimized collada polys.
-
-Q: The .collada models look blurry in Unity?
-
-A: Tweak the .png import settings:
-
-  * TextureType: advanced
-  * Non Power of 2: None
-  * Generate Mip Maps: unchecked
-  * Filter mode: point
 
 Q: Are these characters rigged?
 
