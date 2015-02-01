@@ -17,12 +17,46 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1ee9e047a68f34ef8bfdd6b9e2f2a519, type: 3}
+          m_Texture: {fileID: 2800000, guid: 88213dab61d08461980566bd43f79137, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-    m_Floats: {}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Shininess
+        second: .0300000031
+      data:
+        first:
+          name: _InvFade
+        second: 1
     m_Colors:
       data:
         first:
           name: _Color
         second: {r: .800000012, g: .800000012, b: .800000012, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .5, g: .5, b: .5, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: .5}
